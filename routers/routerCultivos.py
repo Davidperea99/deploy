@@ -31,11 +31,11 @@ def predict_cultivos(data:schemas.Cultivosdata):
     Humidity = data['Humidity']
     ph = data['ph']
     rainfall = data['rainfall']
-    label = data['label']
+    
 
 
 
-    xin = np.array([N,P,K,Temperature,Humidity,ph,rainfall,label]).reshape(1,8)
+    xin = np.array([N,P,K,Temperature,Humidity,ph,rainfall]).reshape(1,8)
 
     prediction = model.predict(xin)
     yout = labels[prediction[0]]

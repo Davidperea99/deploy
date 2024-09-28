@@ -8,7 +8,7 @@ class Cultivosdata(BaseModel):
                 Humidity: float
                 ph: float
                 rainfall: float
-                label: str
+                
 
  
 
