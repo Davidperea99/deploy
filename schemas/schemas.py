@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-class Diabetesdata(BaseModel):
+class Cultivosdata(BaseModel):
                 N: float
                 P: float
                 K: float
